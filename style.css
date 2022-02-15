@@ -5,10 +5,10 @@ body {
     margin-top: 40px;
 }
 .myPicImp, .myPic {
-    transition: width 1s ease, height 1s ease, transform 1s ease;
-    -webkit-transition: width 1s ease, height 1s ease, transform 1s ease;
-    -o-transition: width 1s ease, height 1s ease, transform 1s ease;
-    -moz-transition: width 1s ease, height 1s ease, transform 1s ease;
+    transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+    -webkit-transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+    -o-transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+    -moz-transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
 }
 
 /* Interactive bar */
@@ -60,22 +60,22 @@ body {
     position: relative;
     border-radius: 10px;
     margin-top: 30px;
-    height: 140px;
-    width: 140px;
+    height: 150px;
+    width: 150px;
 }
 .myPicImp {
     position: absolute;
     z-index: 1;
     border-radius: 10px;
     box-shadow: 0px 6px 10px 2px #57ffff46;
-    height: 140px;
-    width: 140px;
+    height: 150px;
+    width: 150px;
 }
 .myTileBackImp:hover .myPicImp {
     box-shadow: 0px 5px 10px 2px #00000033;
     height: 80px;
     width: 80px;
-    transform: translate(30px, 25px);
+    transform: translate(35px, 27px);
 }
 
 /* Tiles */
@@ -84,22 +84,22 @@ body {
     position: relative;
     border-radius: 10px;
     margin-top: 30px;
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
 }
 .myPic {
     position: absolute;
     z-index: 1;
     border-radius: 10px;
     box-shadow: 0px 6px 10px 2px #57ffff46;
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
 }
 .myTileBack:hover .myPic {
     box-shadow: 0px 5px 10px 2px #00000033;
     height: 60px;
     width: 60px;
-    transform: translate(30px, 25px);
+    transform: translate(35px, 27px);
 }
 i {
     margin-left: 3px;
