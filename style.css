@@ -66,17 +66,16 @@ body {
 .myPicImp {
     position: absolute;
     z-index: 1;
-    top: 30px;
     border-radius: 10px;
     box-shadow: 0px 6px 10px 2px #57ffff46;
     height: 140px;
     width: 140px;
 }
-.myPicImp:hover {
+.myTileBackImp:hover .myPicImp {
     box-shadow: 0px 5px 10px 2px #00000033;
     height: 80px;
     width: 80px;
-    transform: translateY(25px);
+    transform: translate(30px, 25px);
 }
 
 /* Tiles */
@@ -91,17 +90,16 @@ body {
 .myPic {
     position: absolute;
     z-index: 1;
-    top: 30px;
     border-radius: 10px;
     box-shadow: 0px 6px 10px 2px #57ffff46;
     height: 120px;
     width: 120px;
 }
-.myPic:hover {
+.myTileBack:hover .myPic {
     box-shadow: 0px 5px 10px 2px #00000033;
     height: 60px;
     width: 60px;
-    transform: translateY(22px);
+    transform: translate(30px, 25px);
 }
 i {
     margin-left: 3px;
