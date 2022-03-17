@@ -1,5 +1,6 @@
 body {
     background: #0A0025;
+    font-family: 'Roboto', sans-serif;
 }
 .container {
     margin-top: 40px;
@@ -12,6 +13,9 @@ body {
 }
 
 /* Interactive bar */
+#btns {
+    width: 70%;
+}
 #bar {
     position: absolute;
     background-color: aliceblue;
@@ -27,10 +31,12 @@ body {
     font-size: x-small;
     height: 45px;
     width: 45px;
+    padding: 0px;
     border-radius: 50%;
     background-color: #0A0025;
     border-color: #57FFFF;
     color: #57FFFF;
+    text-align: center;
 }
 .year:hover {
     background-color: #57FFFF;
@@ -47,10 +53,11 @@ body {
 }
 .btn-primary {
     background-color: #57FFFF;
+    color: black;
     border-color: #57FFFF;
     margin-top: 2px;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
     background-color: #1ed4d4;
 }
 
@@ -58,48 +65,52 @@ body {
 .myTileBackImp {
     background-color: aqua;
     position: relative;
+    padding: 10px 0px;
     border-radius: 10px;
     margin-top: 30px;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
 }
 .myPicImp {
     position: absolute;
     z-index: 1;
+    top: 0px;
     border-radius: 10px;
     box-shadow: 0px 6px 10px 2px #57ffff46;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
 }
 .myTileBackImp:hover .myPicImp {
     box-shadow: 0px 5px 10px 2px #00000033;
-    height: 80px;
-    width: 80px;
-    transform: translate(35px, 27px);
+    height: 100px;
+    width: 100px;
+    transform: translate(47.5px, 40px);
 }
 
 /* Tiles */
 .myTileBack {
     background-color: aqua;
     position: relative;
+    padding: 7px 0px;
     border-radius: 10px;
     margin-top: 30px;
-    height: 130px;
-    width: 130px;
+    height: 160px;
+    width: 160px;
 }
 .myPic {
     position: absolute;
     z-index: 1;
+    top: 0px;
     border-radius: 10px;
     box-shadow: 0px 6px 10px 2px #57ffff46;
-    height: 130px;
-    width: 130px;
+    height: 160px;
+    width: 160px;
 }
 .myTileBack:hover .myPic {
     box-shadow: 0px 5px 10px 2px #00000033;
-    height: 60px;
-    width: 60px;
-    transform: translate(35px, 27px);
+    height: 80px;
+    width: 80px;
+    transform: translate(40px, 33px);
 }
 i {
     margin-left: 3px;
@@ -114,9 +125,36 @@ i {
 .badge {
     background-color: #57FFFF;
     color: black;
+    padding: 10px 20px;
 }
 a {
     color: black;
+}
+@media only screen and (max-width: 768px) {
+    .disappear {
+        display: none;
+    }
+    #bar {
+        width: 92%
+    }
+    #btns {
+        width: 60%;
+    }
+    .myTileBack {
+        font-size: small;
+        padding: 5px 0px;
+        height: 140px;
+        width: 140px;
+    }
+    .myPic {
+        height: 140px;
+        width: 140px;
+    }
+    .myTileBack:hover .myPic {
+        height: 60px;
+        width: 60px;
+        transform: translate(40px, 28px);
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -125,5 +163,38 @@ a {
     }
     #bar {
         width: 92%
+    }
+    #btns {
+        width: 60%;
+    }
+    .myTileBackImp {
+        font-size: small;
+        padding: 5px 0px;
+        height: 140px;
+        width: 140px;
+    }
+    .myPicImp {
+        height: 140px;
+        width: 140px;
+    }
+    .myTileBackImp:hover .myPicImp {
+        height: 60px;
+        width: 60px;
+        transform: translate(40px, 28px);
+    }
+    .myTileBack {
+        font-size: small;
+        padding: 5px 0px;
+        height: 130px;
+        width: 130px;
+    }
+    .myPic {
+        height: 130px;
+        width: 130px;
+    }
+    .myTileBack:hover .myPic {
+        height: 55px;
+        width: 55px;
+        transform: translate(37.5px, 27px);
     }
 }
